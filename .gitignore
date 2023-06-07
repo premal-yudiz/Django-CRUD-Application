@@ -1,3 +1,5 @@
 env/
+db.sqlite3
 CRUD_App/CRUD_App/__pycache__
 CRUD_App/my_application/__pycache__
+CRUD_App/my_application/migrations
