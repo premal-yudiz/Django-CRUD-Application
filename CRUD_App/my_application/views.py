@@ -11,7 +11,6 @@ def add_show(request):
             fm = Student_registration()
         else:
             return HttpResponse("hey")
-
     else:
         fm = Student_registration()
     std = User.objects.all()
@@ -27,6 +26,7 @@ def delete(request,id):
 def update(request,id):
     if request.method == "POST":
         user = User.objects.get(pk=id)
+        print("object..........................",user)
         fm = Student_registration(request.POST,instance=user)
         if fm.is_valid():
             fm.save()
